@@ -439,7 +439,6 @@ GameObject:
   m_Component:
   - component: {fileID: 128408030}
   - component: {fileID: 128408029}
-  - component: {fileID: 128408028}
   m_Layer: 0
   m_Name: Timeline
   m_TagString: Untagged
@@ -447,24 +446,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!95 &128408028
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 128408027}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!320 &128408029
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -480,8 +461,14 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 0}
-    value: {fileID: 128408028}
+    value: {fileID: 0}
   - key: {fileID: 114750175089192632, guid: e23503a7af2da304d9b2b10ed3014c97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114267164829156656, guid: e23503a7af2da304d9b2b10ed3014c97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114108237837231036, guid: e23503a7af2da304d9b2b10ed3014c97, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114267164829156656, guid: e23503a7af2da304d9b2b10ed3014c97, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
@@ -1768,6 +1755,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4552243802719944, guid: 06feddaacfebcc845a71837d24b4ed20,
     type: 2}
   m_PrefabInternal: {fileID: 617054942}
+--- !u!1001 &698889697
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4259080336459724, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1893913859671740, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001912695552534, guid: 359026421860ff84e8b10b168af34aea,
+        type: 2}
+      propertyPath: timetoFade
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001912695552534, guid: 359026421860ff84e8b10b168af34aea,
+        type: 2}
+      propertyPath: interval
+      value: 17.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001912695552534, guid: 359026421860ff84e8b10b168af34aea,
+        type: 2}
+      propertyPath: nextScene
+      value: Scene2.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 359026421860ff84e8b10b168af34aea, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &713090351
 Prefab:
   m_ObjectHideFlags: 0
@@ -3567,7 +3615,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1443264004}
-  - component: {fileID: 1443264005}
   m_Layer: 0
   m_Name: wakame (1)
   m_TagString: Untagged
@@ -3594,24 +3641,6 @@ Transform:
   m_Father: {fileID: 492465223}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 140, z: 0}
---- !u!95 &1443264005
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1443264003}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ad9626b40dc0c124b80cdd51614a5a0c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1456218116 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4032608006118124, guid: 0e4460f2e6af8534883922004bca99b6,

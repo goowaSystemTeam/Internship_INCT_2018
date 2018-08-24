@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CharaControl : MonoBehaviour {
 
-	public float vx, vy, vz;
-	public float rx, ry, rz;
-	public float sx, sy, sz;
+	[SerializeField]
+	float vx, vy, vz, rx, ry, rz, sx, sy, sz;
 
 	Vector3 vel = new Vector3();// (vx, vy, vz);
 	Vector3 rot = new Vector3();// (rx, ry, rz);
@@ -15,7 +15,6 @@ public class CharaControl : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GetComponent<Transform> ();
 		vel.x = vx; vel.y = vy; vel.z = vz;
 		rot.x = rx; rot.y = ry; rot.z = rz;
 		sca.x = sx; sca.y = sy; sca.z = sz;

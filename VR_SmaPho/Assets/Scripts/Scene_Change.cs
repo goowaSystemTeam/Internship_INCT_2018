@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Scene_Change : MonoBehaviour {
 
-	public float interval;
-	public string nextScene;
+	[SerializeField]
+	float timetoFade, interval; //フェード持続時間, フェード開始時間
 
+	[SerializeField]
+	string nextScene;
+	
 	// Use this for initialization
 	void Start () {
-		ChangeScene ();
-		//Invoke ("ChangeScene", interval);
+		Invoke ("ChangeScene", interval);
 	}
 	
 	// Update is called once per frame
@@ -21,7 +23,6 @@ public class Scene_Change : MonoBehaviour {
 
 	void ChangeScene()
 	{
-		FadeManager.Instance.LoadScene (nextScene, interval);
-		//SceneManager.LoadScene (nextScene);
+		FadeManager.Instance.LoadScene (nextScene, timetoFade);
 	}
 }
